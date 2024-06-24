@@ -25,7 +25,7 @@ const Modal: FC<IModal> = ({
             onClose()
         }
     }
-    const submitURL = 'https://localhost:8081/feedback'
+    const submitURL = 'http://195.58.54.11:8081/feedback'
     const [name, setName] = useState('')
     const [tel, setTel] = useState('')
     const handleChangeName: React.ChangeEventHandler<HTMLInputElement> = (e) => {
@@ -39,11 +39,11 @@ const Modal: FC<IModal> = ({
         const re = /^[\d\+][\d\(\)\ -]{4,14}\d$/;
         if (re.test(tel)) {
             try {
+                const myHeaders = new Headers()
+                myHeaders.append("Content-Type", "application/json")
                 const response = await fetch(submitURL, {
                     method: 'POST',
-                    headers: {
-                        'Content-Type': 'application/json;charset=utf-8'
-                    },
+                    headers: myHeaders,
                     body: JSON.stringify({tel, name, email: ''})
                 })
                 if (response.ok) {
