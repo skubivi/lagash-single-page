@@ -1,0 +1,174 @@
+.card-container {
+    display: flex;
+    flex-direction: row;
+    gap: 4dvw;
+    .card {
+        width: 26.8dvw;
+        background-color: #C1ACBD;
+        display: flex;
+        flex-direction: column;
+        gap: 21px;
+        padding-top: 66px;
+        padding-left: 4.8dvw;
+        h4 {
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+        p {
+            font-family: Raleway;
+            font-size: 24px;
+            font-weight: 500;
+            line-height: 28.18px;
+            text-align: left;
+            margin-top: 0;
+            margin-bottom: 0;
+            max-width: 20dvw;
+        }
+    }
+    .list-container {
+        padding-top: 32px;
+        width: 37dvw;
+        padding-bottom: 50px;
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        ul {
+            display: flex;
+            flex-direction: column;
+            gap: 38px;
+            padding-left: 0;
+            li {
+                font-family: Raleway;
+                font-size: 32px;
+                font-weight: 500;
+                line-height: 37.57px;
+                gap: 24px;
+                display: flex;
+                flex-direction: row;
+                img {
+                    width: 25px;
+                    height: 20px;
+                    margin-left: 0;
+                }
+                p {
+                    margin-top: -10px;
+                }
+            }
+            li::marker {
+                display: none;
+                content: '';
+            }
+        }
+    }
+}
+
+@media (max-width: 870px) {
+    .card-container {
+        display: flex;
+        flex-direction: column;
+        gap: 45px;
+        .card {
+            width: 92dvw;
+            background-color: #C1ACBD;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-top: 18px;
+            padding-bottom: 18px;
+            padding-left: 0;
+            gap: 5px;
+            h4 {
+                margin-top: 0;
+                margin-bottom: 0;
+            }
+            p {
+                font-family: Raleway;
+                font-size: 20px;
+                font-weight: 500;
+                line-height: 23.48px;
+                text-align: center;
+                max-width: 245px;
+            }
+        }
+        .list-container {
+            width: 82%;
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+            padding-bottom: 0;
+            ul {
+                display: flex;
+                flex-direction: column;
+                gap: 38px;
+                padding-left: 0;
+                li {
+                    font-family: Raleway;
+                    font-size: 16px;
+                    font-weight: 500;
+                    line-height: 18.78px;
+                    text-align: left;
+                    gap: 11px;
+                    display: flex;
+                    flex-direction: row;
+                    img {
+                        width: 12px;
+                        height: 10px;
+                        margin-left: 0;
+                    }
+                    p {
+                        margin-top: -5px;
+                    }
+                }
+                li::marker {
+                    display: none;
+                    content: '';
+                }
+            }
+        }
+    }
+}
+
+:dir(rtl) {
+    .card-container {
+        .card {
+            padding-left: unset;
+            padding-right: 4.8dvw;
+            p {
+                text-align: right;
+                font-family: "Rubik";
+            }
+        }
+        .list-container {
+            ul {
+                padding-left: unset;
+                padding-right: 0;
+                li {
+                    font-family: "Rubik";
+                    img {
+                        margin-left: unset;
+                        margin-right: 0;
+                    }
+                }
+            }
+        }
+    }
+    @media (max-width: 870px) {
+        .card-container {
+            .card {
+                padding-right: 0;
+                padding-left: unset;
+            }
+            .list-container {
+                ul {
+                    li {
+                        text-align: right;
+                        img {
+                            margin-left: unset;
+                            margin-right: 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

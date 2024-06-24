@@ -1,0 +1,230 @@
+h1 {
+    font-family: "Playfair Display SC";
+    font-size: 75px;
+    font-weight: 700;
+    line-height: 99.98px;
+    text-align: left;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+h2 {
+    font-family: "Playfair Display SC";
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 85.31px;
+    text-align: left;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+h3 {
+    font-family: "Playfair Display SC";
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 53.32px;
+    text-align: left;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+h4 {
+    font-family: "Raleway";
+    font-size: 64px;
+    font-weight: 600;
+    line-height: 75.14px;
+    text-align: left;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+h5 {
+    font-family: "Raleway";
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 42.26px;
+    text-align: left;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+h6 {
+    font-family: "Raleway";
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 42.26px;
+    text-align: left;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+img {
+    z-index: 1;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+@media (max-width: 1370px) {
+    h1 {
+        font-size: 75px;
+    }
+    
+    h2 {
+        font-size: 64px;
+    }
+    
+    h3 {
+        font-size: 40px;
+    }
+    
+    h4 {
+        font-size: 50px;
+    }
+    
+    h5 {
+        font-size: 36px;
+    }
+    
+    h6 {
+        font-size: 36px;
+    }
+}
+
+@media (max-width: 975px) {
+    h1 {
+        font-size: 75px;
+    }
+    
+    h2 {
+        font-size: 64px;
+    }
+    
+    h3 {
+        font-size: 40px;
+    }
+    
+    h4 {
+        font-size: 40px;
+    }
+    
+    h5 {
+        font-size: 36px;
+    }
+    
+    h6 {
+        font-size: 36px;
+    }
+}
+
+@media (max-width: 870px) {
+    h1 {
+        font-family: "Playfair Display SC";
+        font-size: 36px;
+        font-weight: 700;
+        line-height: 47.99px;
+        text-align: center;
+    }
+    
+    h2 {
+        font-family: "Playfair Display SC";
+        font-size: 36px;
+        font-weight: 700;
+        line-height: 47.99px;
+        text-align: left;
+    }
+    
+    h3 {
+        font-family: "Playfair Display SC";
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 31.99px;
+        text-align: left;
+    }
+    
+    h4 {
+        font-family: "Raleway";
+        font-size: 32px;
+        font-weight: 600;
+        line-height: 37.57px;
+        text-align: left;
+    }
+    
+    h5 {
+        font-family: "Raleway";
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 23.48px;
+        text-align: left;
+    }
+    
+    h6 {
+        font-family: "Raleway";
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 23.48px;
+        text-align: left;
+    }
+}
+
+:dir(rtl) {
+    font-family: "Rubik" !important;
+    h1 {
+        font-family: "Rubik";
+        text-align: right;
+    }
+    
+    h2 {
+        font-family: "Rubik";
+        text-align: right;
+    }
+    
+    h3 {
+        font-family: "Rubik";
+        text-align: right;
+    }
+    
+    h4 {
+        font-family: "Rubik";
+        text-align: right;
+    }
+    
+    h5 {
+        font-family: "Rubik";
+        text-align: right;
+    }
+    
+    h6 {
+        font-family: "Rubik";
+        text-align: right;
+    }
+    
+    @media (max-width: 870px) {
+        h2 {
+            text-align: right;
+        }
+        
+        h3 {
+            text-align: right;
+        }
+        
+        h4 {
+            text-align: right;
+        }
+        
+        h5 {
+            text-align: right;
+        }
+        
+        h6 {
+            text-align: right;
+        }
+    }
+}

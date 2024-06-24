@@ -1,0 +1,125 @@
+.first-block {
+    display: flex;
+    flex-direction: column;
+    .title-block {
+        display: flex;
+        flex-direction: row;
+        margin-top: 168px;
+        margin-left: 10dvw;
+        width: 86dvw;
+        justify-content: space-between;
+        .left-block {
+            display: flex;
+            flex-direction: column;
+            gap: 38px;
+            .title {
+                margin-top: 96px;
+            }
+            .submit-button {
+                background-color: #C1ACBD;
+                width: 245px;
+                height: 70px;
+                gap: 0px;
+                border-radius: 15px;
+                border-width: 0;
+                font-family: Raleway;
+                font-size: 24px;
+                font-weight: 500;
+                line-height: 28.18px;
+                color: #FDF6EC;
+            }
+        }
+    }
+    .navigation-block {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 4.5dvw;
+        margin-top: 138px;
+        margin-bottom: 87px;
+        p {
+            cursor: pointer;
+            font-family: Raleway;
+            font-size: 32px;
+            font-weight: 600;
+            line-height: 37.57px;
+        }
+    }
+}
+
+@media (max-width: 870px) {
+    .first-block {
+        .title-block {
+            width: 100dvw;
+            margin-left: 0;
+            margin-top: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            .left-block {
+                display: flex;
+                flex-direction: column;
+                margin-top: 286px;
+                align-items: center;
+                gap: 269px;
+                .title {
+                    margin-top: 0;
+                    max-width: 283px;
+                }
+                .submit-button {
+                    background-color: #C1ACBD;
+                    width: 135px;
+                    height: 36px;
+                    gap: 0px;
+                    border-radius: 15px;
+                    border-width: 0;
+                    font-family: Raleway;
+                    font-size: 14px;
+                    font-weight: 500;
+                    line-height: 16.44px;
+                    color: #FDF6EC;
+                }
+            }
+            img {
+                position: absolute;
+                top: 489px;
+                right: 16px;
+                width: 122px;
+                height: 147px;
+            }
+        }
+        .navigation-block {
+            display: none;
+        }
+    }
+}
+
+:dir(rtl) {
+    .first-block {
+        .title-block {
+            .left-block {
+                .submit-button {
+                    font-family: "Rubik";
+                }
+            }
+            margin-left: unset;
+            margin-right: 10dvw;
+        }
+    }
+    .navigation-block {
+        p {
+            font-family: "Rubik";
+        }
+    }
+    @media (max-width: 870px) {
+        .first-block {
+            .title-block {
+                margin-right: 0;
+                img {
+                    right: unset;
+                    left: 16px;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,103 @@
+.second-block {
+    position: relative;
+    display: flex;
+    min-height: 100dvh;
+    .first-image {
+        position: absolute;
+        top: 52px;
+        left: 3.6dvw;
+    }
+    .second-image {
+        position: absolute;
+        bottom: -72px;
+        right: 3.6dvw;
+        width: 272px;
+        height: 339px;
+    }
+    .second-block-container {
+        display: flex;
+        flex-direction: column;
+        margin-top: 221px;
+        margin-left: 14dvw;
+        gap: 37px;
+        p {
+            font-family: Raleway;
+            font-size: 32px;
+            font-weight: 500;
+            line-height: 37.57px;
+            text-align: left;
+            max-width: 57dvw;
+            margin-bottom: 221px;
+        }
+    }
+}
+
+@media (max-width: 870px) {
+    .second-block {
+        position: relative;
+        display: flex;
+        min-height: 100dvh;
+        .first-image {
+            display: none;
+        }
+        .second-image {
+            position: absolute;
+            bottom: 125px;
+            right: 15px;
+            width: 131px;
+            height: 164px;
+        }
+        .second-block-container {
+            display: flex;
+            flex-direction: column;
+            margin-top: 122px;
+            margin-left: 15px;
+            gap: 45px;
+            p {
+                font-family: Raleway;
+                font-size: 16px;
+                font-weight: 500;
+                line-height: 18.78px;
+                text-align: left;
+                max-width: 91dvw;
+                margin-bottom: 361px;
+            }
+        }
+    }
+}
+
+:dir(rtl) {
+    .second-block {
+        .first-image {
+            left: unset;
+            right: 3.6dvw;
+        }
+        .second-image {
+            right: unset;
+            left: 3.6dvw;
+        }
+        .second-block-container {
+            margin-left: unset;
+            margin-right: 14dvw;
+            p {
+                text-align: right;
+            }
+        }
+    }
+
+    @media (max-width: 870px) {
+        .second-block {
+            .second-image {
+                right: 15px;
+                left: 15px;
+            }
+            .second-block-container {
+                margin-right: 15px;
+                margin-left: unset;
+                p {
+                    text-align: right;
+                }
+            }
+        }
+    }
+}

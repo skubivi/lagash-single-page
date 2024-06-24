@@ -1,0 +1,202 @@
+.footer-block {
+    background-color: #ECE5DB;
+    padding-top: 256px;
+    .footer {
+        background-color: #47426A;
+        min-height: 390px;
+        padding-left: 10dvw;
+        padding-right: 10dvw;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        .column {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            p {
+                color: #C1ACBD;
+                font-family: Raleway;
+                font-size: 16px;
+                font-weight: 700;
+                line-height: 18.78px;
+                text-align: left;
+            }
+        }
+        .first-column {
+            margin-top: 38px;
+            gap: 0px;
+            .logo {
+                width: 104px;
+                height: 75px;
+            }
+            .s-n-container {
+                display: flex;
+                flex-direction: row;
+                gap: 7px;
+                margin-top: 28px;
+                img {
+                    width: 30px;
+                    height: 30px;
+                    cursor: pointer;
+                }
+            }
+            .tel {
+                margin-top: 37px;
+            }
+            .website {
+                margin-top: 15px;
+            }
+        }
+        .second-column {
+            margin-top: 101px;
+            p {
+                cursor: pointer;
+            }
+        }
+        .third-column {
+            margin-top: 98px;
+        }
+        .small-column {
+            display: none;
+        }
+    }
+}
+
+@media (max-width: 870px) {
+    .footer-block {
+        position: relative;
+        background-color: #FDF6EC;
+        padding-top: 60px;
+        padding-left: 15px;
+        padding-right: 15px;
+        .footer {
+            min-height: unset;
+            background-color: #FDF6EC;
+            padding: 0;
+            justify-content: space-between;
+            .first-column {
+                display: none;
+            }
+            .second-column {
+                display: none;
+            }
+            .third-column {
+                display: none;
+            }
+            .small-column {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                .small-logo {
+                    width: 57px;
+                    height: 40px;
+                }
+                .title {
+                    margin-top: 42px;
+                }
+                .subtitle {
+                    margin-top: 38px;
+                    font-family: Raleway;
+                    font-size: 20px;
+                    font-weight: 400;
+                    line-height: 23.48px;
+                    text-align: left;
+                }
+                .tel {
+                    margin-top: 37px;
+                    font-family: Raleway;
+                    font-size: 20px;
+                    font-weight: 600;
+                    line-height: 23.48px;
+                    text-align: left;
+                }
+                .website {
+                    margin-top: 10px;
+                    font-family: Raleway;
+                    font-size: 20px;
+                    font-weight: 600;
+                    line-height: 23.48px;
+                    text-align: left;
+                }
+                .s-n-container {
+                    margin-top: 20px;
+                    display: flex;
+                    flex-direction: row;
+                    gap: 8px;
+                    margin-bottom: 280px;
+                }
+                .small-footer-image {
+                    position: absolute;
+                    bottom: 49px;
+                    right: 23px;
+                    height: 207px;
+                    width: 165px;
+                }
+            }
+        }
+    }
+}
+
+
+:dir(rtl) {
+    .footer-block {
+        .footer {
+            padding-left: 10dvw;
+            padding-right: 10dvw;
+            .column {
+                p {
+                    font-family: "Rubik";
+                    text-align: right;
+                }
+            }
+        }
+    }
+    
+    @media (max-width: 870px) {
+        .footer-block {
+            padding-left: 15px;
+            padding-right: 15px;
+            .footer {
+                .small-column {
+                    .subtitle {
+                        font-family: "Rubik";
+                        text-align: right;
+                    }
+                    .tel {
+                        font-family: "Rubik";
+                        text-align: right;
+                    }
+                    .website {
+                        font-family: "Rubik";
+                        text-align: right;
+                    }
+                    .small-footer-image {
+                        right: unset;
+                        left: 23px
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+//Remove when links will appear
+.footer-block {
+    .footer {
+        .first-column {
+            .s-n-container {
+                img {
+                    display: none;
+                }
+            }
+        }
+        .small-column {
+            .s-n-container {
+                img {
+                    display: none;
+                }
+            }
+        }
+    }
+}

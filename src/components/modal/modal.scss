@@ -1,0 +1,258 @@
+.modal-container {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 2;
+    width: 100dvw;
+    height: 100dvh;
+    background-color: rgba($color: #000000, $alpha: 0.2);
+    .modal-window {
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        height: 90dvh;
+        width: 38dvw;
+        top: 5dvh;
+        left: 2.7dvw;
+        min-height: 500px;
+        border-radius: 15px;
+        background-color: #FDF6EC;
+        .close-container {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
+            .close-button {
+                color: #47426A;
+                transform: rotate(45deg);
+                background-color: rgba($color: #000000, $alpha: 0.0);
+                border-width: 0;
+                font-family: Raleway;
+                font-size: 64px;
+                font-weight: 400;
+                line-height: 75.14px;
+                margin-right: 2%;
+            }
+        }
+        .form-container {
+            height: 100%;
+            margin-left: 7%;
+            width: 79%;
+            display: flex;
+            flex-direction: column;
+            margin-top: 7%;
+            gap: 8%;
+            form {
+                display: flex;
+                flex-direction: column;
+                gap: calc(0.056 * max(90dvh, 500px));
+                .modal-input {
+                    color: #47426A;
+                    background: none;
+                    border-top: 0px;
+                    border-right: 0px;
+                    border-left: 0px;
+                    border-bottom: 1px;
+                    border-style: solid;
+                    border-color: #C1ACBD;
+                    font-family: Raleway;
+                    font-size: 24px;
+                    font-weight: 400;
+                    line-height: 28.18px;
+                    text-align: left;
+                    padding-top: 13px;
+                    padding-bottom: 13px;
+                }
+                :focus {
+                    outline: 0;
+                    border-color: #47426A;
+                }
+                ::placeholder {
+                    color: #C1ACBD;
+                }
+                p {
+                    color: #C1ACBD;
+                    font-family: Raleway;
+                    font-size: 16px;
+                    font-weight: 400;
+                    line-height: 18.78px;
+                    text-align: left;
+                }
+                button {
+                    margin-top: 10px;
+                    background-color: #C1ACBD;
+                    width: 245px;
+                    height: 64px;
+                    gap: 0px;
+                    border-radius: 15px;
+                    border-width: 0;
+                    font-family: Raleway;
+                    font-size: 24px;
+                    font-weight: 500;
+                    line-height: 28.18px;
+                    color: #FDF6EC;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 870px) {
+    .modal-container {
+        position: fixed;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-end;
+        top: 0px;
+        left: 0px;
+        z-index: 2;
+        width: calc(100dvw - 30px);
+        padding-left: 15px;
+        padding-right: 15px;
+        height: 100dvh;
+        background-color: rgba($color: #000000, $alpha: 0.2);
+        .modal-window {
+            position: static;
+            height: 500px;
+            margin-bottom: 16px;
+            width: calc(100dvw - 70px);
+            border-radius: 15px;
+            background-color: #FDF6EC;
+            padding-left: 20px;
+            padding-right: 20px;
+            .close-container {
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-end;
+                .close-button {
+                    transform: rotate(45deg);
+                    background-color: rgba($color: #000000, $alpha: 0.0);
+                    border-width: 0;
+                    font-family: Raleway;
+                    font-size: 64px;
+                    font-weight: 400;
+                    line-height: 75.14px;
+                    margin-right: 2%;
+                }
+            }
+            .form-container {
+                width: 100%;
+                margin-left: 0;
+                display: flex;
+                flex-direction: column;
+                margin-top: 0;
+                gap: 8%;
+                form {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 30px;
+                    .modal-input {
+                        color: #47426A;
+                        background: none;
+                        border-top: 0px;
+                        border-right: 0px;
+                        border-left: 0px;
+                        border-bottom: 1px;
+                        border-style: solid;
+                        border-color: #C1ACBD;
+                        font-family: Raleway;
+                        font-size: 16px;
+                        font-weight: 400;
+                        line-height: 18.78px;
+                        text-align: left;
+                        padding-top: 13px;
+                        padding-bottom: 13px;
+                    }
+                    :focus {
+                        outline: 0;
+                        border-color: #47426A;
+                    }
+                    ::placeholder {
+                        color: #C1ACBD;
+                    }
+                    p {
+                        color: #C1ACBD;
+                        font-family: Raleway;
+                        font-size: 12px;
+                        font-weight: 400;
+                        line-height: 14.09px;
+                        text-align: left;
+                        margin-top: 30px;
+                    }
+                    button {
+                        margin-top: 10px;
+                        background-color: #C1ACBD;
+                        width: 164px;
+                        height: 48px;
+                        gap: 0px;
+                        border-radius: 15px;
+                        border-width: 0;
+                        font-family: Raleway;
+                        font-size: 16px;
+                        font-weight: 600;
+                        line-height: 18.78px;
+                        color: #FDF6EC;
+                    }
+                }
+            }
+        }
+    }    
+}
+
+:dir(rtl) {
+    .modal-container {
+        right: 0px;
+        left: unset;
+        .modal-window {
+            left: unset;
+            right: 2.7dvw;
+            .close-container {
+                .close-button {
+                    margin-right: unset;
+                    margin-left: 2%;
+                }
+            }
+            .form-container {
+                margin-left: unset;
+                margin-right: 7%;
+                form {
+                    .modal-input {
+                        text-align: right;
+                    }
+                    p {
+                        text-align: right;
+                    }
+                }
+            }
+        }
+    }
+    
+    @media (max-width: 870px) {
+        .modal-container {
+            padding-left: 15px;
+            padding-right: 15px;
+            .modal-window {
+                padding-left: 20px;
+                padding-right: 20px;
+                .close-container {
+                    .close-button {
+                        margin-right: unset;
+                        margin-left: 2%;
+                    }
+                }
+                .form-container {
+                    margin-right: 0;
+                    margin-left: unset;
+                    form {
+                        .modal-input {
+                            text-align: right;
+                        }
+                        p {
+                            text-align: right;
+                        }
+                    }
+                }
+            }
+        }    
+    }
+}

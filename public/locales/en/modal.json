@@ -1,0 +1,12 @@
+{
+    "modal": {
+        "title": "Get a consultation or sign up for a service",
+        "first": "By clicking the \"Submit\" button, you consent to the processing of ",
+        "second": "personal data",
+        "third": "and agree to the ",
+        "fourth": "privacy policy.",
+        "button": "Submit application",
+        "place1": "Your name",
+        "place2": "Your phone"
+    }
+}
