@@ -25,7 +25,7 @@ const Modal: FC<IModal> = ({
             onClose()
         }
     }
-    const submitURL = 'http://195.58.54.11:8081/feedback'
+    const submitURL = 'https://agoramas.net/feedback'
     const [name, setName] = useState('')
     const [tel, setTel] = useState('')
     const handleChangeName: React.ChangeEventHandler<HTMLInputElement> = (e) => {
